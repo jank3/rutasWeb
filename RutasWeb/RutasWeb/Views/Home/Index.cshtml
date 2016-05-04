@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Upload Json File</h2>
+@using(Html.BeginForm("Ruta", "Home", FormMethod.Post, new {enctype="multipart/form-data"}))
+{
+    <input type="file" name="file" id="file" />
+    <input type="submit" value="Upload" />
+}
